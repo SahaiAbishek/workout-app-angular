@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="form-group">
+    <input type="text" placeholder="serach" name="searchWorkouts" />
+  </div>
+  <div *ngFor="let workout of allworkouts" class="form-group">
+    <input type="label" value={{workout.name}} />
+    
+    <div>
+        <nav>
+            <a routerLink="editWorkout"> <button>Edit</button></a>
+            <a routerLink=""><button>Delete</button></a>
+            <a routerLink="endWorkout"><button>End</button></a>
+            <a routerLink="startWorkout"><button>Start</button></a>
+          </nav>
+    </div>
+  </div>
+</div>
